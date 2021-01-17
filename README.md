@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For Server: 
+Step 1: npm init create-react-app ServerApp
+Step 2: cd ServerApp
+Step 3: npm start
+Step 4: npm install express body-parser –save-dev
+Step 5: npm install node-env-run nodemon npm-run-all express-pino-logger pino-colada –save-dev
+Step 6: npm install mysql ws cors multer
+Step 7: Create an .env file in server react app. (Its an empty file for future database connections )
+Step 8: Add “proxy”:http://localhost:3001 to package.json file
+Step 9: Add “scripts”:{
+                                    “server”: “node-env-run server –exec nodemon”,
+                                    “dev”: “run-p server start”
+                        }
+              to package.json file
+Step 10: Add a folder name server and add a file named index.js and paste above server/index.js code there.
+Step 11: In App.js file paste server webpage code.
+Step 12: Type npm run dev to start the console and server webpage.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+For Client:
+Step 1: npm create-react-app ClientApp
+Step 2: cd ClientApp
+Step 3: npm install ws axios 
+Step 4: In App.js file paste client/client.js webpage code and style from client/client.css.
+Step 5: Type npm start in terminal to start the client react app
+Note: Run ServerApp before ClientApp so that server can run in port 3000 and client can run in port 3002.
