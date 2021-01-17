@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background: linear-gradient(to right,#d16ba5,#c777b9, #ba83ca,#aa8fd8,#9a9ae1, #8aa7ec, #79b3f4, #69bff8,#52cffe,#41dfff,#46eefa,#5ffbf1);
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#name{
+  padding: 4px;
+  font-size: 20px;
+  border-width: 2px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: dashed;
+  border-radius: 20px;
+  box-shadow:  0px 0px 5px rgba(66,66,66,0.75);
+  text-shadow: 0px 0px 8px rgba(205,53,53,0.75);
+}
+
+.al{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-color: blue;
+  color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 40px 40px blue inset,0 0 0 0 blue;
+  transition: all 150ms ease-in-out;
+
+  
+}
+.al:hover{
+    box-shadow: 0 0 10px 0 blue inset,0 0 10px 4px blue;
+}
